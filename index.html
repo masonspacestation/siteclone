@@ -12,58 +12,83 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="debug">
   <!-- SECTION nav -->
-  <nav class="container-fluid">
-    <div class="row justify-content-start bg-dark">
-      <h2 class="text-light">LOGO</h2>
-    </div>
+  <nav class="container-fluid bg-storm">
+    <section class="row justify-content-between bg-dark">
+      <div class="col-2">
+        <img class="nav-logo p-4" src="assets/scout-white.svg" alt="scout logo">
+      </div>
+    </section>
   </nav>
 
   <!-- SECTION header/hero -->
-  <header class="container-fluid bg-info hero-img">
-    <section class="row">
+  <header class="container-fluid">
+    <section class="row hero-img d-flex align-content-center">
       <div class="col-4">
-        form
+        <form class="row bg-light rounded shadow m-5 p-2">
+          <div class="mb-2">
+            <label for="name"></label>
+            <input type="text" class="form-control" placeholder="Name">
+          </div>
+          <div class="mb-2">
+            <label for="style"></label>
+            <input type="text" class="form-control" placeholder="Style">
+          </div>
+          <div class="mb-2">
+            <label for="wheel"></label>
+            <input type="text" class="form-control" placeholder="Wheel Size">
+          </div>
+          <div class="my-3">
+            <button class="btn btn-primary rounded-pill">Search</button>
+          </div>
+        </form>
       </div>
       <div class="col-8">
-        text over image
+        <h1 class="px-3 main-tagline">Thoughtful bicycles.<br>For the adventurous explorer.</h1>
+        <p class="p-3 fs-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sunt asperiores
+          adipisci.
+        </p>
+      </div>
+
       </div>
     </section>
   </header>
+
   <!-- SECTION main -->
-  <main class="container-fluid bg-secondary">
-    <section class="row">
-      <div class="col-5">
-        top info
-        <h1>h1 title info</h1>
-        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsam beatae sunt minima explicabo sint ex
-          iste praesentium.</h4>
+  <main class="container-fluid bg-secondary bg-storm">
+    <section class="row d-flex floating-card-offset align-items-end justify-content-between">
+      <div class="col-5 p-5">
+        <h2>h1 title info</h2>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsam beatae sunt minima explicabo sint
+          existe praesentium.</h4>
       </div>
-      <div class="col-7 card shadow-sm bg-light">
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
+      <div class="col-7 d-flex justify-content-center containing-block">
+        <div class="row d-flex card shadow-sm bg-light floating-card py-3 px-5">
+          <p> <i class="mdi mdi-icon"></i> Lorem ipsum dolor sit amet.</p>
+          <p> <i class="mdi mdi-icon"></i> Lorem ipsum dolor sit amet.</p>
+          <p> <i class="mdi mdi-icon"></i> Lorem ipsum dolor sit amet.</p>
+          <p> <i class="mdi mdi-icon"></i> Lorem ipsum dolor sit amet.</p>
+          <p> <i class="mdi mdi-icon"></i> Lorem ipsum dolor sit amet.</p>
+        </div>
       </div>
     </section>
 
-    <section class="container-fluid">
-      <div class="row">
-        <div class="col-4">
-          <img src="//placehold.it/300x500" alt="">
-        </div>
-        <div class="col-8">
-          <i class="mdi mdi-bike text-success"></i>
-          <h2>Big interesting info about what's going on here.</h2>
-          <button class="justify-content-end">More</button>
-        </div>
+    <section class="row bg-sage">
+      <div class="col-4 p-5">
+        <img class="rounded shadow" src="assets/dont-need-cars.png" alt="">
+      </div>
+      <div class="col-8">
+        <i class="mdi mdi-bike text-success"></i>
+        <h2 class="storm">Big interesting info about what's going on here.</h2>
+        <button class="justify-content-end">More</button>
       </div>
     </section>
 

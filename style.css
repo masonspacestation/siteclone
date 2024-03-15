@@ -1,9 +1,69 @@
+:root {
+  --sage: #809ba6;
+  --storm: #3c515a;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
+.font-deco,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rokkitt", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+img {
+  width: 100%;
+}
+
+.bg-sage {
+  background-color: var(--sage);
+}
+
+.bg-storm {
+  background-color: var(--storm);
+}
+
+.sage {
+  color: var(--sage);
+}
+
+.storm {
+  color: var(--storm)
+}
+
 .hero-img {
-  min-height: 75dvh;
+  height: 75dvh;
+  /* width: 100%; */
+  background-size: cover;
+  background-position: bottom;
+  background-image: url(assets/maksymilian-sleziak-kZKtXy2Flko-unsplash.jpg);
+}
+
+.main-tagline {
+  border-left: 10px solid var(--sage);
+}
+
+.containing-block {
+  position: relative;
+  min-height: 5vh;
+  padding: 0;
+}
+
+.floating-card {
+  position: absolute;
+  bottom: -5vh;
+}
+
+.floating-card-offset {
+  align-content: end;
 }
