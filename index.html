@@ -23,7 +23,7 @@
   <nav class="container-fluid bg-storm sticky-top">
     <section class="row justify-content-between">
       <div class="col-2">
-        <img class="nav-logo p-4" src="assets/scout-white.svg" alt="scout logo">
+        <img class="p-md-4" src="assets/scout-white.svg" alt="scout logo">
       </div>
     </section>
   </nav>
@@ -31,7 +31,7 @@
   <!-- SECTION header/hero -->
   <header class="container-fluid">
     <section class="row hero-img d-flex justify-content-around align-items-center">
-      <div class="col-4">
+      <div class="col-md-4">
         <form class="row bg-light rounded shadow m-5 p-2">
           <div class="mb-2">
             <label for="name"></label>
@@ -50,7 +50,7 @@
           </div>
         </form>
       </div>
-      <div class="col-6 main-tagline sage">
+      <div class="col-6 main-tagline sage d-none d-md-block">
         <h1 class="">Thoughtful bicycles.<br>For the adventurous explorer.</h1>
         <p class="fs-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sunt asperiores
           adipisci.
@@ -64,12 +64,12 @@
   <!-- SECTION main -->
   <main class="container-fluid bg-storm">
     <section class="row d-flex">
-      <div class="col-5 p-5 text-light">
+      <div class="col-md-5 mt-5 mt-md-0 p-5 text-light order-2 order-md-1">
         <h2>h1 title info</h2>
         <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsam beatae sunt minima explicabo sint
           existe praesentium.</h4>
       </div>
-      <div class="col-7">
+      <div class="col-md-7 order-1 order-md-2">
         <div class="row justify-content-center floating-card-offset align-items-end">
           <!-- NOTE card is locked to the top right corner of the containing block. the containing block needs to be narrow enough to move side to side within floating card offset. does it need to be a column, and the card a section or row within that? then the offset div would need to be a row so that the containing block can be a column -->
           <div class="col-10 containing-block">
@@ -103,10 +103,10 @@
     </section>
 
     <section class="row d-flex justify-content-around border-4 border-primary p-2 bg-sage">
-      <div class="col-4 p-5">
+      <div class="col-md-4 p-md-5">
         <img class="rounded shadow" src="assets/dont-need-cars.png" alt="">
       </div>
-      <div class="align-self-center col-6 mt-5 p-5">
+      <div class="align-self-center col-md-6 mt-5 p-5">
 
         <h4 class="storm pyrite lh-1">Nature sets the scene.</h4>
         <h2 class="storm fs-1 lh-1">Adventure takes main stage.</h2>
@@ -124,12 +124,12 @@
 
       <section class="container-fluid bg-storm py-5 reviews">
         <div class="row align-items-center justify-content-around">
-          <div class="col-3 p-4 rounded bg-light shadow">
+          <div class="col-md-3 p-4 rounded bg-light shadow order-2 order-md-1">
             <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate doloremque in dicta.</h5>
             <h6 class="text-success">—<br>A. Lastname</h6>
           </div>
           <!-- moving card -->
-          <div class="col-3 p-4 rounded bg-light shadow">
+          <div class="col-md-3 p-4 rounded bg-light shadow order-1 order-md-2">
             <div class="row py-3 d-flex align-content-center">
               <svg xmlns="http://www.w3.org/2000/svg" width="75px" height="75px" viewBox="0 0 24 24">
                 <title>seal-variant</title>
@@ -141,7 +141,7 @@
             <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate doloremque in dicta.</h5>
             <h6 class="text-success">—<br>A. Lastname</h6>
           </div>
-          <div class="col-3 p-4 rounded bg-light shadow">
+          <div class="col-md-3 p-4 rounded bg-light shadow order-3">
             <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate doloremque in dicta.</h5>
             <h6 class="text-success">—<br>A. Lastname</h6>
           </div>
@@ -164,7 +164,7 @@
 
   <section class="row justify-content-around py-4">
 
-    <div class="col-2">
+    <div class="col-md-2">
       <h4>Visit</h4>
       <ul>
         <li>abc</li>
@@ -173,7 +173,7 @@
       </ul>
     </div>
 
-    <div class="col-2">
+    <div class="col-md-2">
       <h4>Visit</h4>
       <ul>
         <li>abc</li>
@@ -182,7 +182,7 @@
       </ul>
     </div>
 
-    <div class="col-2">
+    <div class="col-md-2">
       <h4>Visit</h4>
       <ul>
         <li>abc</li>
