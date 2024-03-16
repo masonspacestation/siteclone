@@ -15,14 +15,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="debug">
   <!-- SECTION nav -->
-  <nav class="container-fluid bg-storm">
-    <section class="row justify-content-between bg-dark">
+  <nav class="container-fluid bg-storm sticky-top">
+    <section class="row justify-content-between">
       <div class="col-2">
         <img class="nav-logo p-4" src="assets/scout-white.svg" alt="scout logo">
       </div>
@@ -64,28 +63,34 @@
 
   <!-- SECTION main -->
   <main class="container-fluid bg-storm">
-    <section class="row d-flex aligns-items-end justify-content-center">
+    <section class="row d-flex">
       <div class="col-5 p-5 text-light">
         <h2>h1 title info</h2>
         <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsam beatae sunt minima explicabo sint
           existe praesentium.</h4>
       </div>
-      <!-- <div class="col-7 floating-card-offset">
-        <div class="row
-        d-flex justify-content-center containing-block">
-          <div class="card shadow-sm bg-light floating-card py-3 px-5">
-            <p> <i class="mdi mdi-bike sage fs-2"></i> Never a bad time for bikes.</p>
-            <p> <i class="mdi mdi-image-filter-hdr sage fs-2"></i> Mountains are refreshing.</p>
-            <p> <i class="mdi mdi-road-variant sage fs-2"></i> Roads are intense.</p>
-            <p> <i class="mdi mdi-heart sage fs-2"></i> Bikes love you back.</p>
-            <p> <i class="mdi mdi-trophy sage fs-2"></i> Try our award-winning rides.</p>
+      <div class="col-7">
+        <div class="row justify-content-center floating-card-offset align-items-end">
+          <!-- NOTE card is locked to the top right corner of the containing block. the containing block needs to be narrow enough to move side to side within floating card offset. does it need to be a column, and the card a section or row within that? then the offset div would need to be a row so that the containing block can be a column -->
+          <div class="col-10 containing-block">
+            <section class="row floating-card pt-4 p-3 bg-light rounded shadow">
+              <div class="col-6">
+                <p class="mb-4"><i class="mdi mdi-bike sage"></i> Never a bad time for bikes.</p>
+                <p class="mb-4"> <i class="mdi mdi-image-filter-hdr sage"></i> Mountains are refreshing.</p>
+                <p class="mb-4"> <i class="mdi mdi-road-variant sage"></i> Roads are intense.</p>
+              </div>
+              <div class="col-6">
+                <p class="mb-4"> <i class="mdi mdi-heart sage"></i> Bikes love you back.</p>
+                <p class="mb-4"> <i class="mdi mdi-trophy sage"></i> Try our award-winning rides.</p>
+              </div>
+            </section>
           </div>
         </div>
-      </div> -->
-      <div class="col-7">
+      </div>
+      <!-- <div class="col-7">
         <div class="row justify-content-center floating-card-offset">
-          <div class="containing-block align-items-end">
-            <section class="floating-card py-3 px-5 bg-light rounded shadow">
+          <div class="col-10 containing-block">
+            <section class="row floating-card py-3 px-5 bg-light rounded shadow">
               <p> <i class="mdi mdi-bike sage fs-2"></i> Never a bad time for bikes.</p>
               <p> <i class="mdi mdi-image-filter-hdr sage fs-2"></i> Mountains are refreshing.</p>
               <p> <i class="mdi mdi-road-variant sage fs-2"></i> Roads are intense.</p>
@@ -94,7 +99,7 @@
             </section>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <section class="row d-flex justify-content-around border-4 border-primary p-2 bg-sage">
@@ -145,9 +150,8 @@
     </div>
 
     <!-- SECTION map -->
-    <section class="container-fluid bg-success">
-      <div class="row">
-        big map
+    <section class="row bg-storm">
+      <div class="footer-sec bg-topo">
       </div>
     </section>
 
@@ -157,37 +161,36 @@
 
 <!-- SECTION footer -->
 <footer class="container-fluid">
-  <section class="container">
-    <div class="row justify-content-around py-4">
 
-      <div class="col-3">
-        <h4>Visit</h4>
-        <ul>
-          <li>abc</li>
-          <li>def</li>
-          <li>ghi</li>
-        </ul>
-      </div>
+  <section class="row justify-content-around py-4">
 
-      <div class="col-3">
-        <h4>Visit</h4>
-        <ul>
-          <li>abc</li>
-          <li>def</li>
-          <li>ghi</li>
-        </ul>
-      </div>
-
-      <div class="col-3">
-        <h4>Visit</h4>
-        <ul>
-          <li>abc</li>
-          <li>def</li>
-          <li>ghi</li>
-        </ul>
-      </div>
-
+    <div class="col-2">
+      <h4>Visit</h4>
+      <ul>
+        <li>abc</li>
+        <li>def</li>
+        <li>ghi</li>
+      </ul>
     </div>
+
+    <div class="col-2">
+      <h4>Visit</h4>
+      <ul>
+        <li>abc</li>
+        <li>def</li>
+        <li>ghi</li>
+      </ul>
+    </div>
+
+    <div class="col-2">
+      <h4>Visit</h4>
+      <ul>
+        <li>abc</li>
+        <li>def</li>
+        <li>ghi</li>
+      </ul>
+    </div>
+
   </section>
 
 </footer>

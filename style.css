@@ -2,6 +2,7 @@
   --sage: #809ba6;
   --storm: #3c515a;
   --pyrite: #fbb03b;
+  --sky: #d3e9f3;
 }
 
 body {
@@ -38,6 +39,10 @@ img {
   background-color: var(--pyrite);
 }
 
+.bg-sky {
+  background-color: var(--sky);
+}
+
 .sage {
   color: var(--sage);
 }
@@ -50,11 +55,26 @@ img {
   color: var(--pyrite);
 }
 
+.sky {
+  background-color: var(--sky);
+}
+
 .hero-img {
   height: 75dvh;
   background-size: cover;
   background-position: bottom;
   background-image: url(assets/maksymilian-sleziak-kZKtXy2Flko-unsplash.jpg);
+}
+
+.bg-topo {
+  background-size: cover;
+  background-position: bottom;
+  background-image: url(assets/topo.png);
+  opacity: 20%;
+}
+
+.footer-sec {
+  height: 25dvh;
 }
 
 .main-tagline {
@@ -65,20 +85,21 @@ img {
   border-top: 6px solid var(--pyrite);
 }
 
+.floating-card-offset {
+  border: 10px solid greenyellow;
+  /* margin-top: 10dvh; */
+}
+
 .containing-block {
   position: relative;
-  min-height: 10vh;
+  min-height: 20dvh;
   border: 10px solid blue;
   padding: 0;
 }
 
 .floating-card {
   position: absolute;
-  width: 75%;
   border: 10px solid red;
-  top: 1vh;
-}
-
-.floating-card-offset {
-  border: 10px solid greenyellow;
+  top: 4vh;
+  width: 100%;
 }
