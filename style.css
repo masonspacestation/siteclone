@@ -35,6 +35,10 @@ img {
   background-color: var(--storm);
 }
 
+.btn-outline-storm {
+  border: 4px solid var(--storm);
+}
+
 .bg-pyrite {
   background-color: var(--pyrite);
 }
@@ -63,6 +67,7 @@ img {
   min-height: 50dvh;
   background-size: cover;
   background-position: bottom;
+  opacity: 80%;
   background-image: url(assets/maksymilian-sleziak-kZKtXy2Flko-unsplash.jpg);
 }
 
@@ -83,6 +88,14 @@ img {
 
 .nav-logo {
   max-width: 150px;
+}
+
+.bottom-nav {
+  height: 10dvh;
+}
+
+.bottom-nav i {
+  font-size: 1.25em;
 }
 
 .main-tagline {
