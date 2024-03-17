@@ -73,6 +73,10 @@ img {
   opacity: 20%;
 }
 
+.card-edge {
+  height: 5dvh;
+}
+
 .footer-sec {
   height: 25dvh;
 }
@@ -104,6 +108,6 @@ img {
 .floating-card {
   position: absolute;
   /* border: 10px solid red; */
-  top: 4vh;
+  top: 7vh;
   width: 100%;
 }
