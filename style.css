@@ -60,7 +60,7 @@ img {
 }
 
 .hero-img {
-  height: 75dvh;
+  min-height: 50dvh;
   background-size: cover;
   background-position: bottom;
   background-image: url(assets/maksymilian-sleziak-kZKtXy2Flko-unsplash.jpg);
@@ -77,6 +77,10 @@ img {
   height: 25dvh;
 }
 
+.nav-logo {
+  max-width: 150px;
+}
+
 .main-tagline {
   border-left: 10px solid var(--pyrite);
 }
@@ -86,20 +90,20 @@ img {
 }
 
 .floating-card-offset {
-  border: 10px solid greenyellow;
+  /* border: 10px solid greenyellow; */
   /* margin-top: 10dvh; */
 }
 
 .containing-block {
   position: relative;
   min-height: 20dvh;
-  border: 10px solid blue;
+  /* border: 10px solid blue; */
   padding: 0;
 }
 
 .floating-card {
   position: absolute;
-  border: 10px solid red;
+  /* border: 10px solid red; */
   top: 4vh;
   width: 100%;
 }
