@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="debug">
+<body class="">
   <!-- SECTION nav -->
   <nav class="container-fluid bg-storm sticky-top shadow">
     <section class="row p-3 justify-content-center justify-content-md-between">
@@ -26,10 +26,10 @@
         <img class="w-auto" src="assets/scout-white.svg" alt="scout logo">
       </div>
       <div class="col-10 d-block d-md-none">
-        <p class="fs-6 lh-1 pb-0 text-center text-light">Thoughtful Bicyles.<br>For the adventurous explorer.
+        <p class="fs-6 lh-1 text-center text-light">Thoughtful Bicyles.<br>For the adventurous explorer.
         </p>
       </div>
-      <!-- nav links md
+      <!-- NOTE nav links md
       mobile nav bar is at the bottom of the html, below the header -->
       <div class="col-md-6 me-4 text-center d-none d-md-block">
         <div class="row h-100 justify-content-around justify-content-md-between align-items-center">
@@ -80,23 +80,23 @@
 
   <!-- SECTION main -->
   <main class="container-fluid bg-storm">
-    <section class="row pt-md-3">
-      <div class="col-md-5 mt-0 p-5 pb-3 text-light order-2 order-md-1">
-        <h2 class="pyrite">Explore the world. <i class="mdi mdi-globe-model"></i></h2>
+    <section class="row justify-content-center pt-md-3">
+      <div class="col-10 col-md-6 mt-0 px-md-5 py-3 text-light order-2 order-md-1">
+        <h2 class="pyrite pt-0">Explore the world. <i class="mdi mdi-globe-model"></i></h2>
         <h4 class="sage">Discover new trails and conquer rugged terrain with our high-performance mountain and
           bikepacking bikes.
         </h4>
       </div>
-      <div class="col-md-7 order-1 order-md-2">
+      <div class="col-md-6 order-1 order-md-2">
         <div class="row mb-5 mb-md-0 justify-content-center floating-card-offset align-items-end">
-          <!-- NOTE card is locked to the top right corner of the containing block. the containing block needs to be narrow enough to move side to side within floating card offset. does it need to be a column, and the card a section or row within that? then the offset div would need to be a row so that the containing block can be a column -->
-          <div class="containing-block col-10">
-            <section class="floating-card row py-4 mt-4 p-3 bg-light rounded shadow">
-              <div class="col-6">
+          <div class="containing-block col-10 m-0 p-0">
+            <section
+              class="floating-card w-auto m-md-auto row py-4 mt-4 p-3 bg-light rounded shadow text-center text-md-start justify-content-center">
+              <div class="col-10 col-md-6">
                 <p class="mb-4"><i class="mdi mdi-bike sage"></i> Never a bad time for bikes.</p>
                 <p class=""> <i class="mdi mdi-image-filter-hdr sage"></i> Mountains are refreshing.</p>
               </div>
-              <div class="col-6">
+              <div class="col-10 col-md-6">
                 <p class="mb-4"> <i class="mdi mdi-heart sage"></i> Bikes love you back.</p>
                 <p class=""> <i class="mdi mdi-trophy sage"></i> Try our award-winning rides.</p>
               </div>
@@ -110,9 +110,9 @@
       <div class="mt-5 p-md-3 m-md-5 col-md-4">
         <img class="rounded shadow" src="assets/no-cars-crop.png" alt="">
       </div>
-      <div class="align-self-center bg-topo col-md-5 p-5">
+      <div class="align-self-center bg-topo col-md-5 p-5 my-md-3">
 
-        <h4 class="storm pyrite lh-1">Nature sets the scene.</h4>
+        <h4 class="storm pyrite lh-1 mt-md-3">Nature sets the scene.</h4>
         <h2 class="storm fs-1 lh-1">Adventure takes center stage.</h2>
         <p class="text-light">
           Embark on journeys where nature's beauty sets the stage and adventure awaits at every turn. Our bikes empower
@@ -182,11 +182,11 @@
       </section>
     </div>
 
-    <!-- SECTION map -->
+    <!-- SECTION suscribe -->
     <section class="row">
       <div class="container-fluid subscribe bg-storm">
         <div class="row justify-content-center align-items-center footer-sec bg-topo">
-          <div class="my-5 col-8 rounded-1">
+          <div class="col-8 my-5 rounded-1">
             <form class="row bg-white opacity-75 rounded shadow pt-2 justify-content-around">
               <div class="col-md-6 pt-3 px-5">
                 <h3 class="pyrite">Ride with us</h3>
@@ -196,7 +196,7 @@
                 <label for="email">What's your email address?</label>
                 <input type="text" class="form-control" placeholder="you@mail.com">
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="" value="option1" />
+                  <input class="form-check-input" type="checkbox" id="" value="ok to contact" />
                   <label class="form-check-label fs-6 fw-lighter" for="">I understand you'll be contacting me.</label>
                 </div>
               </div>
@@ -206,7 +206,7 @@
       </div>
     </section>
 
-    <!-- SECTION end -->
+    <!-- SECTION main end -->
   </main>
 
   <!-- SECTION footer -->
@@ -214,7 +214,7 @@
 
     <section id="contact" class="row justify-content-around mt-3 mt-md-0 py-4">
 
-      <div class="col-10 col-md-2">
+      <div class="col-10 col-md-2 pt-2">
         <h4>Visit Us</h4>
         <p>
           Some Warehouse<br>
@@ -222,7 +222,7 @@
         </p>
       </div>
 
-      <div class="col-10 col-md-2">
+      <div class="col-10 col-md-2 pt-2">
         <h4>Contact</h4>
         <p>
           (208) 345-6789<br>
@@ -230,19 +230,19 @@
         </p>
       </div>
 
-      <div class="col-10 col-md-2">
+      <div class="col-10 col-md-2 pt-2">
         <h4>Social</h4>
         <p class="fs-2"><i class="mdi mdi-instagram"> </i><i class="mdi mdi-facebook"> </i><i class="mdi mdi-spotify">
           </i><i class="mdi mdi-star"> </i>
         </p>
       </div>
-    </section>
 
+    </section>
   </footer>
 
-  <!-- nav links mobile -->
-  <div class="container-fluid shadow sticky-bottom d-md-none">
-    <div class="bottom-nav row bg-storm text-white fs-2 text-center justify-content-around align-content-center">
+  <!-- SECTION nav links mobile -->
+  <div class="container-fluid shadow sticky-bottom d-md-none bg-storm">
+    <div class="bottom-nav row bg-topo text-white fs-2 text-center justify-content-around align-content-center">
       <div class="col-2"><i class="mdi mdi-bicycle"></i></div>
       <div class="col-2"><i class="mdi mdi-compass-outline"></i></div>
       <div class="col-2 pyrite"><i class="mdi mdi-store-outline"></i></div>
