@@ -74,8 +74,7 @@ img {
 .bg-topo {
   background-size: cover;
   background-position: bottom;
-  background-image: url(assets/topo.png);
-  opacity: 20%;
+  background-image: url(assets/topo-20.png);
 }
 
 .card-edge {
@@ -106,21 +105,31 @@ img {
   border-top: 6px solid var(--pyrite);
 }
 
-.floating-card-offset {
-  /* border: 10px solid greenyellow; */
-  /* margin-top: 10dvh; */
-}
-
-.containing-block {
-  position: relative;
+.subscribe {
   min-height: 20dvh;
-  /* border: 10px solid blue; */
-  padding: 0;
 }
 
-.floating-card {
-  position: absolute;
-  /* border: 10px solid red; */
-  top: 7vh;
-  width: 100%;
+@media(min-width: 768px) {
+
+  .larger-than-768 {
+    border: 2px solid greenyellow;
+  }
+
+  .floating-card-offset {
+    /* border: 10px solid greenyellow; */
+    /* margin-top: 10dvh; */
+  }
+
+  .containing-block {
+    position: relative;
+    min-height: 20dvh;
+    /* border: 10px solid blue; */
+    padding: 0;
+  }
+
+  .floating-card {
+    position: absolute;
+    /* border: 10px solid red; */
+    top: 7vh;
+  }
 }
