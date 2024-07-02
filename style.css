@@ -11,6 +11,11 @@ body {
   font-style: normal;
 }
 
+
+footer {
+  min-height: 48px;
+}
+
 .font-deco,
 h1,
 h2,
@@ -25,6 +30,13 @@ h6 {
 
 img {
   width: 100%;
+}
+
+.icon {
+  height: 32px;
+  width: 32px;
+  margin: 0;
+  padding: 0;
 }
 
 .bg-sage {
